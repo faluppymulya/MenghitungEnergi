@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Menghitung Energi"/>
+        <attribute name="authors" value="TUF_GAMING"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-13 09.23.39 PM"/>
+        <attribute name="created" value="VFVGX0dBTUlORztGQUxVUFBJOzIwMjUtMDktMTM7MDguMjYuMzggUE07MjU2Nw=="/>
+        <attribute name="edited" value="VFVGX0dBTUlORztGQUxVUFBJOzIwMjUtMDktMTM7MDkuMjMuMzkgUE07MTsyNjc0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="massa, kecepatan, ketinggian, EnergiPotensial, EnergiKinetik, EnergiMekanik" type="Integer" array="False" size=""/>
+            <output expression="&quot;Menghitung Energi Potensial dan Kinetik&quot;" newline="True"/>
+            <output expression="&quot;Massa = &quot;" newline="True"/>
+            <input variable="massa"/>
+            <output expression="&quot;Kecepatan = &quot;" newline="True"/>
+            <input variable="kecepatan"/>
+            <output expression="&quot;Ketinggian = &quot;" newline="True"/>
+            <input variable="ketinggian"/>
+            <assign variable="EnergiPotensial" expression="massa*10*ketinggian"/>
+            <assign variable="EnergiKinetik" expression="0.5*massa*kecepatan*kecepatan"/>
+            <assign variable="EnergiMekanik" expression="EnergiPotensial+EnergiKinetik"/>
+            <output expression="&quot;Energi Potensial = &quot; &amp;EnergiPotensial" newline="True"/>
+            <output expression="&quot;Energi Kinetik = &quot; &amp;EnergiKinetik" newline="True"/>
+            <output expression="&quot;Energi Mekanik = &quot; &amp;EnergiMekanik" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
